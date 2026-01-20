@@ -2,7 +2,7 @@
 
 A modern, cross-platform CLI tool for generating and managing Steam game keys in various formats with optional persistence in a JSON database.
 
-## ?? Features
+## Features
 
 - **Multi-Format Key Generation**: Supports three different Steam key formats
   - **Format 1**: 8-part format (AAAAA-BBBBB-CCCCC-AAAAA-BBBBB-CCCCC-DDDDD-EEEEE)
@@ -21,7 +21,7 @@ A modern, cross-platform CLI tool for generating and managing Steam game keys in
   - Format selection
   - Enable/disable database persistence
 
-## ?? Installation
+## Installation
 
 ### Requirements
 
@@ -43,7 +43,7 @@ dotnet run --project SteamKeyGenerator/SteamKeyGenerator.csproj
 dotnet run
 ```
 
-## ?? Usage
+## Usage
 
 ### Main Menu
 
@@ -79,7 +79,7 @@ Select option (1/2/3):
 
 The selected settings will remain for the current session.
 
-## ??? Architecture
+## Architecture
 
 The project follows the **Single Responsibility Principle** with clear separation of concerns:
 
@@ -121,7 +121,7 @@ CliMenu (UI & User Interaction)
 [Optional: KeyDatabaseManager persists to JSON]
 ```
 
-## ?? Database Format
+## Database Format
 
 Keys are stored in JSON format (`steam_keys_database.json`):
 
@@ -136,7 +136,7 @@ Keys are stored in JSON format (`steam_keys_database.json`):
 }
 ```
 
-## ?? Technical Details
+## Technical Details
 
 ### Key Generation
 
@@ -162,7 +162,7 @@ Implements OS-specific mechanisms:
 
 Failed clipboard operations are silently ignored and do not interrupt the workflow.
 
-## ??? Development
+## Development
 
 ### Project Structure
 
@@ -192,7 +192,7 @@ dotnet build -c Release
 dotnet clean
 ```
 
-## ?? License
+## License
 
 This project is licensed under the **MIT License**. You are free to use, modify, and distribute it.
 
@@ -220,11 +220,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## ?? Contributing
+## Contributing
 
 Contributions are welcome! Please create a fork and submit your improvements as pull requests.
 
-## ?? Support
+## Support
 
 If you have any questions or issues, please open an [Issue](https://github.com/Chookees/SteamKeyGenerator/issues) on GitHub.
 
