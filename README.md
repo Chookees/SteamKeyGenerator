@@ -85,11 +85,11 @@ The project follows the **Single Responsibility Principle** with clear separatio
 
 ```
 Program.cs (Entry-Point)
-    ?
+    ⬇
 CliMenu (UI & User Interaction)
-    ??? KeyGenerator (Key Generation)
-    ??? KeyDatabaseManager (Persistence)
-    ??? ClipboardManager (System Integration)
+    - KeyGenerator (Key Generation)
+    - KeyDatabaseManager (Persistence)
+    - ClipboardManager (System Integration)
 ```
 
 ### Components
@@ -109,15 +109,15 @@ CliMenu (UI & User Interaction)
 
 ```
 [User Input] 
-    ?
+    ⬇
 [CliMenu validates]
-    ?
+    ⬇
 [KeyGenerator creates unique key]
-    ?
+    ⬇
 [KeyDatabaseManager checks uniqueness]
-    ?
+    ⬇
 [ClipboardManager copies to clipboard]
-    ?
+    ⬇
 [Optional: KeyDatabaseManager persists to JSON]
 ```
 
@@ -168,15 +168,15 @@ Failed clipboard operations are silently ignored and do not interrupt the workfl
 
 ```
 SteamKeyGenerator/
-??? Program.cs                  (Entry-Point)
-??? CliMenu.cs                  (UI Logic)
-??? KeyGenerator.cs             (Generation)
-??? KeyDatabaseManager.cs        (Persistence)
-??? ClipboardManager.cs          (System Integration)
-??? KeyEntry.cs                 (Model)
-??? SteamKeyDatabase.cs          (Model)
-??? GeneratorOptions.cs          (Model)
-??? SteamKeyGenerator.csproj
+- Program.cs                  (Entry-Point)
+- CliMenu.cs                  (UI Logic)
+- KeyGenerator.cs             (Generation)
+- KeyDatabaseManager.cs        (Persistence)
+- ClipboardManager.cs          (System Integration)
+- KeyEntry.cs                 (Model)
+- SteamKeyDatabase.cs          (Model)
+- GeneratorOptions.cs          (Model)
+- SteamKeyGenerator.csproj
 ```
 
 ### Build and Test
